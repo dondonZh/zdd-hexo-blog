@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>记录ES6 对数组的一些便捷操作</title>
+      <link href="/2019/06/22/hello-world/"/>
+      <url>/2019/06/22/hello-world/</url>
+      
+        <content type="html"><![CDATA[<h2 id="ES6数组操作"><a href="#ES6数组操作" class="headerlink" title="ES6数组操作"></a>ES6数组操作</h2><p>下面是平时日常用的比较多的es6数组处理</p><h3 id="MAP"><a href="#MAP" class="headerlink" title="MAP"></a>MAP</h3><pre class=" language-bash"><code class="language-bash"><span class="token punctuation">[</span><span class="token punctuation">..</span>.new Set<span class="token punctuation">(</span>response.data.data.map<span class="token punctuation">(</span>item <span class="token operator">=</span><span class="token operator">></span> item.initiateTime<span class="token punctuation">))</span><span class="token punctuation">]</span></code></pre><p>提取对象数组 某一不重复属性 作为新数组</p><h3 id="REDUCE"><a href="#REDUCE" class="headerlink" title="REDUCE"></a>REDUCE</h3><pre class=" language-bash"><code class="language-bash"><span class="token punctuation">(</span>state.list.reduce<span class="token variable"><span class="token punctuation">((</span><span class="token punctuation">(</span>pre<span class="token punctuation">,</span>cru<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> pre<span class="token operator">+</span>cru.issueCount<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">))</span></span></code></pre><p>获取对象数组的属性和</p><h3 id="SPLICE"><a href="#SPLICE" class="headerlink" title="SPLICE"></a>SPLICE</h3><pre class=" language-bash"><code class="language-bash">arr.splice<span class="token punctuation">(</span>arr.findIndex<span class="token punctuation">(</span>item <span class="token operator">=</span><span class="token operator">></span> item.id <span class="token operator">==</span><span class="token operator">=</span> data.id<span class="token punctuation">)</span>, 1<span class="token punctuation">)</span></code></pre><p>删除数组特定值</p><h3 id="ELSE"><a href="#ELSE" class="headerlink" title="ELSE"></a>ELSE</h3><pre class=" language-bash"><code class="language-bash"><span class="token punctuation">[</span><span class="token punctuation">..</span>.<span class="token punctuation">(</span>this.insRed.sort<span class="token variable"><span class="token punctuation">((</span>a<span class="token punctuation">,</span>b<span class="token punctuation">)</span><span class="token operator">=</span><span class="token operator">></span> a<span class="token operator">-</span>b<span class="token punctuation">))</span></span><span class="token punctuation">]</span>.join<span class="token punctuation">(</span><span class="token string">' '</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><p>数组转为有序字符串（数字数组）</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> ES6 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
